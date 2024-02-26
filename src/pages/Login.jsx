@@ -29,7 +29,6 @@ const Login = () => {
         <div className="form-group has-success">
           <form action="" className="sign-in-form" onSubmit={handleSubmit(onSubmit)}>
             {/* LEFT SIDE */}
-            <div className="Edit-Left">
               <div className="card-wrapper">
                 <div className="card">
                   <div className="card-body">
@@ -41,7 +40,6 @@ const Login = () => {
                   </div>
                 </div>
               </div>
-            </div>
 
             {/* RIGHT SIDE */}
             <div className="Edit-Signs">

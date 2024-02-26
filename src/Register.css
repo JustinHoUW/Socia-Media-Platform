@@ -1,4 +1,4 @@
-.second-container {
+.second-container-register {
     width: 1100px;
     height: 80vh;
     margin-top: 130px;
@@ -7,19 +7,14 @@
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.Edit-Signs {
 
-    margin-left: 570px;
-    margin-top: -472px;
-}
-
-.card-wrapper {
+.card-wrapper-register {
     
     margin-left: 59px;
   }
   
-  .card {
-    width: 500px;
+  .card-register{
+    width: 600px;
     margin-top: -100px;
     height: 650px;
     margin-left: -60px;
@@ -27,9 +22,33 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
   }
   
-  .card-body {
+  .card-body-register{
     padding: 20px; /* Add padding to the card body */
-    background-color: rgb(255, 255, 255);
     height: 650px;
+    
+  }
+
+  .Edit-Signs-register {
+    margin-left: 500px;
+    background-color: white;
+    margin-top: -650px;
+    width: 600px;
+    border-radius: 15px; /* Add border radius for rounded corners */
 
   }
+
+.Fname-fields {
+    display: flex;
+    gap: 10px; 
+}
+
+.Lname-fields {
+    display: flex;
+    gap: 10px; 
+}
+
+.password-fields {
+
+    display: flex;
+    gap: 10px; 
+}

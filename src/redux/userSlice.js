@@ -1,12 +1,14 @@
-import { createsSlice } from "@reduxjs/toolkit"
+import { createSlice } from '@reduxjs/toolkit';
+
+import { user } from "../assets/data";  
 
 const initialState = {
-    theme: JSON.parse(window ?.localStorage.getItem("user")) ?? {},
+    user: JSON.parse(window ?.localStorage.getItem("user")) ?? user,
     edit: false,
 
 };
 
-const userSlice = createsSlice ({
+const userSlice = createSlice ({
     name: "user",
     initialState,
     reducers: {

@@ -15,7 +15,8 @@ import NavBar from './components/NavBar';
 function Layout() {
   const user = useSelector((state => state.user));
   const location = useLocation();
-  console.log(user);
+  //console.log(user);
+  
   // Authenticate the user
   return user?.token ? (
     <Outlet />
@@ -25,7 +26,7 @@ function Layout() {
 
   );
 }
-const App = () => {
+function App () {
   const { theme } = useSelector((state) => state.theme);
 
   return ( 

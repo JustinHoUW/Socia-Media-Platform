@@ -7,22 +7,24 @@ const TextInput = React.forwardRef((
     return (
         <div className='top-editor'>
             {label && (
-                <p className={'text-styles ${labelStyles}'}>{label}</p>)}
-                <div>
-                    <input type = {type}
-                    name = {name}
-                    placeholder = {placeholder}
-                    ref = {ref}
+                <p className={`text-styles ${labelStyles}`}>{label}</p>
+            )}
+            <div>
+                <input
+                    type={type}
+                    name={name}
+                    placeholder={placeholder}
+                    ref={ref}
                     {...register}
-                    aria-invalid = {error ? true: false}
-                    />
-                </div>
-                {error && (
-                    <span>{error}</span>
-                )}
+                    aria-invalid={error ? true : false}
+                    style={styles} 
+                />
+            </div>
+            {error && (
+                <span>{error}</span>
+            )}
         </div>
     );
-}
-);
+});
 
-export default TextInput
+export default TextInput;
