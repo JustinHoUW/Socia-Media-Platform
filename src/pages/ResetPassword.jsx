@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { TextInput } from "../components";
 import Loading from '../components/Loading';
-import CustomButton from '../components/CustonButton';
+import CustomButton from '../components/CustomButton';
 import '../ResetPassword.css';
 
 

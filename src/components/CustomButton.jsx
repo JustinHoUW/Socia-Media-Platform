@@ -3,7 +3,7 @@ const CustomButton = ({ title, containerStyles, iconRight, type, onClick, styles
         <button 
             onClick={onClick}
             type={type || "button"}
-            className={`inline-flex items-center text-base ${containerStyles}`}
+            className={`${containerStyles}`}
             style={styles} 
             >
             {title}

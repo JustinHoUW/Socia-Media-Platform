@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes, Navigate, Outlet, useLocation } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useSelector } from "react-redux";
-import { Home, Login, Profile, Register, ResetPassword } from "./pages";
+import { Home, Login, Profile, Register, ResetPassword, ProfileCard } from "./pages";
 
 import './App.css';
 
@@ -40,6 +40,8 @@ function App () {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/ProfileCard" element={<ProfileCard />} />
+
         </Routes> 
       </div>
     </Router>

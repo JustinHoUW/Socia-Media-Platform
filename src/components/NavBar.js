@@ -1,10 +1,21 @@
 import { Link } from 'react-router-dom';
- import React, { useState } from 'react'; // Import useState from React
+import React, { useState } from 'react'; // Import useState from React
 import { Dropdown } from 'bootstrap';
-
+import CustomButton from './CustomButton';
+import { Logout } from '../redux/userSlice';
+import { useDispatch } from "react-redux";
 
 
 const NavBar = () => {
+  const dispatch = useDispatch();
+  const [isVisible, setIsVisible] = useState(true);
+
+  {/* Logs out the user and hides the button when clicked */}
+  const handleLogout = () => {
+    dispatch(Logout());
+    setIsVisible(false); // Hide the button after logout
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container-fluid">
@@ -24,9 +35,9 @@ const NavBar = () => {
             </li>
             <div className="dropdown-menu">
               <ul>
-                <DropdownItem/>
-                <DropdownItem/>
-                <DropdownItem/>
+                <DropdownItem />
+                <DropdownItem />
+                <DropdownItem />
               </ul>
             </div>
           </ul> {/* Add this closing ul tag */}
@@ -35,10 +46,24 @@ const NavBar = () => {
             <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
           </form>
           <ul className="navbar-nav me-auto">
-  <li className="nav-item">
-    <Link className="nav-link active" to="/login">Login</Link>
-  </li>
-</ul>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/login">Login</Link>
+            </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Me</a>
+              <div className="dropdown-menu">
+                <a className="dropdown-item" href="#">Edit Profile</a>
+                <Link
+                  onClick={handleLogout}
+                  className={`dropdown-item ${isVisible ? '' : 'hide'}`}
+                  style={{ display: isVisible ? 'inline-block' : 'none' }}
+                  to="/login"
+                >
+                  Log Out
+                </Link>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

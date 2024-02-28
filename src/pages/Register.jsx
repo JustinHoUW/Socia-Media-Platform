@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import '../Register.css';
 import { TextInput } from "../components";
-import CustomButton from '../components/CustonButton';
+import CustomButton from '../components/CustomButton';
 import Loading from '../components/Loading';
 import talkingimage from '../images/nice-talking.png';
 

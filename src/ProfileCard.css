@@ -1,0 +1,7 @@
+.pfp-box {
+    width: 800px;
+    height: 800px;
+    border-radius: 15px; /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    background-color: white;
+}
