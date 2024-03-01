@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { NoProfile } from "../assets";
 import { AiOutlineEdit, AiTwotoneEdit } from "react-icons/ai";
-import { BsFacebook, BsPersonFillAdd, BsInstagram, BsBriefcase} from 'react-icons/bs';
+import { BsFacebook, BsPersonFillAdd, BsInstagram, BsBriefcase } from 'react-icons/bs';
 import { CiLocationOn } from "react-icons/ci";
 import moment from "moment";
 import { FaTwitter } from "react-icons/fa";
@@ -18,12 +18,11 @@ const ProfileCard = ({ user }) => {
 
     return (
         <>
-            <div className="pfp-box">
-                <hr className="my-4" />
-
+            <hr className="my-4" />
+            <div style={{ marginLeft: '15px' }}>
                 <Link to={"/profile/" + user?.id} style={{ textDecoration: 'none' }}>
 
-                    <img src={user?.profileUrl ?? NoProfile} alt={user?.email} style={{ width: '170.67px', height: '170.7px', borderRadius: '90px' }}></img>
+                    <img src={user?.profileUrl ?? NoProfile} alt={user?.email} style={{ width: '85.335px', height: '85.335px', borderRadius: '90px' }}></img>
 
                     {user?.firstName} {user?.lastName}
                 </Link >
@@ -43,62 +42,61 @@ const ProfileCard = ({ user }) => {
                 )}
 
                 <div>
-                    <div>
-                        <CiLocationOn></CiLocationOn>
-                        <span>{user?.location ?? "Add Location"}</span>
-                    </div>
-
-                    <div>
-                        <BsBriefcase />
-                        <span>{user?.profession ?? "Add Profession"}</span>
-
-
-
-                    </div>
+                    <CiLocationOn></CiLocationOn>
+                    <span>{user?.location ?? "Add Location"}</span>
                 </div>
 
                 <div>
-                    <p>
-                        {user?.friends?.length} Friends
-                    </p>
+                    <BsBriefcase />
+                    <span>{user?.profession ?? "Add Profession"}</span>
+
+
+
+                </div>
+
+
+
+                <p>
+                    {user?.friends?.length} Friends
+                </p>
+
+                <div>
+                    <span>
+                        Who viewed your profile&nbsp;
+                    </span>
+                    <span>
+                        {user?.views?.length}
+                    </span>
+
+                    <hr className="my-4" />
+
+                    <span>
+                        {user?.verified ? "Verified Account" : "Not Verified"}
+                    </span>
 
                     <div>
+                        <span>Joined </span>
                         <span>
-                            Who viewed your profile&nbsp;
+                            {moment(user?.createAt).fromNow()}
                         </span>
-                        <span>
-                            {user?.views?.length}
-                        </span>
-
-                        <hr className="my-4" />
-
-                        <span>
-                            {user?.verified ? "Verified Account" : "Not Verified"}
-                        </span>
-
-                        <div>
-                            <span>Joined </span>
-                            <span>
-                                {moment(user?.createAt).fromNow()}
-                            </span>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Social Profile</p>
-
-                        <BsInstagram/>
-                        <span>Instagram</span>
-                    </div>
-                    <div>
-                    <FaTwitter />
-                        <span>Twitter</span>
-                    </div>
-                    <div>
-                        <BsFacebook/>
-                        <span>Facebook</span>
                     </div>
                 </div>
-            </div>
+                <div>
+                    <p>Social Profile</p>
+
+                    <BsInstagram />
+                    <span>Instagram</span>
+                </div>
+                <div>
+                    <FaTwitter />
+                    <span>Twitter</span>
+                </div>
+                <div>
+                    <BsFacebook />
+                    <span>Facebook</span>
+                </div>
+
+        </div>
         </>
     )
 };

@@ -1,0 +1,21 @@
+
+
+.pfp-box-friends{
+    width: 400px;
+    height: 600px;
+    margin-left: 90px;
+
+    border-radius: 15px; /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    background-color: rgb(255, 255, 255);
+}
+
+.pfp-box-request {
+    margin-top: -600px;
+    margin-left: 1010px;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 15px; /* Add border radius for rounded corners */
+}
