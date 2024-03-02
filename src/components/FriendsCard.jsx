@@ -11,8 +11,8 @@ const FriendsCard = ({ friends }) => {
             <span>{friends?.length}</span>
 
             {friends?.map((friend) => (
-                <div> {/* Moved key attribute here */}
-                    <Link to={"/profile/" + friend?._id} style={{ textDecoration: 'none' }} key={friend?._id}
+                <div style={{ display: 'flex', alignItems: 'center' }} key={friend?._id}>
+                    <Link to={"/profile/" + friend?._id} style={{ textDecoration: 'none' }}
                     >
                         <img
                             src={friend?.profileUrl ?? NoProfile}
@@ -20,15 +20,17 @@ const FriendsCard = ({ friends }) => {
                             style={{ width: '85.335px', height: '85.335px', borderRadius: '90px' }}
                         />
                     </Link>
-                    <hr className="my-2" />
-                    <div>
-                        <Link to={"/profile/" + friend?._id} style={{ textDecoration: 'none', textDecorationStyle: 'none' }}>
-                            {friend?.firstName} {friend?.lastName}
-                        </Link>
-                        <hr className="my-1" />
-                        <span>
-                            {friend?.profession ?? "No Profession"}
-                        </span>
+                    <div style={{ marginLeft: '10px' }}> {/* Added marginLeft for spacing */}
+                        <div>
+                            <Link to={"/profile/" + friend?._id} style={{ textDecoration: 'none', textDecorationStyle: 'none' }}>
+                                {friend?.firstName} {friend?.lastName}
+                            </Link>
+                        </div>
+                        <div>
+                            <span>
+                                {friend?.profession ?? "No Profession"}
+                            </span>
+                        </div>
                     </div>
                 </div>
             ))}

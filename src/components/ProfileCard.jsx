@@ -18,11 +18,11 @@ const ProfileCard = ({ user }) => {
 
     return (
         <>
-            <hr className="my-4" />
+            <hr className="my-2" />
             <div style={{ marginLeft: '15px' }}>
                 <Link to={"/profile/" + user?.id} style={{ textDecoration: 'none' }}>
 
-                    <img src={user?.profileUrl ?? NoProfile} alt={user?.email} style={{ width: '85.335px', height: '85.335px', borderRadius: '90px' }}></img>
+                    <img src={user?.profileUrl ?? NoProfile} alt={user?.email} style={{ width: '47.408px', height: '47.408px', borderRadius: '90px' }}></img>
 
                     {user?.firstName} {user?.lastName}
                 </Link >
@@ -40,7 +40,7 @@ const ProfileCard = ({ user }) => {
                         <BsPersonFillAdd size={20} />
                     </button>
                 )}
-
+<hr style={{ border: '1px solid black', marginLeft: '-15px'}} />
                 <div>
                     <CiLocationOn></CiLocationOn>
                     <span>{user?.location ?? "Add Location"}</span>
@@ -67,6 +67,8 @@ const ProfileCard = ({ user }) => {
                     <span>
                         {user?.views?.length}
                     </span>
+                    <hr style={{ border: '1px solid black', marginLeft: '-15px'}} />
+
 
                     <hr className="my-4" />
 
@@ -82,6 +84,8 @@ const ProfileCard = ({ user }) => {
                     </div>
                 </div>
                 <div>
+                <hr style={{ border: '1px solid black', marginLeft: '-15px'}} />
+
                     <p>Social Profile</p>
 
                     <BsInstagram />

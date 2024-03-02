@@ -1,3 +1,4 @@
+
 export const user = {
     _id: "64df3c064180b81adfe41d4b",
     firstName: "Justin",
@@ -12,8 +13,8 @@ export const user = {
         friends: ["64df3c064180b81adfe41d4b", "64df39704180b81adfe41d0b"],
         views: [],
         verified: true,
-        createdAt: "2023-08-18T09:33:32.519Z",
-        updatedAt: "2023-08-18T09:49:19.475Z",
+        createdAt: "2024-01-18T09:33:32.519Z",
+        updatedAt: "2024-02-18T09:49:19.475Z",
         __v: 2,
         profileUrl:
           "https://res.cloudinary.com/djs3wu5bg/image/upload/v1683874470/cld-sample.jpg",
@@ -33,8 +34,8 @@ export const user = {
           "64df39704180b81adfe41d0b",
         ],
         verified: true,
-        createdAt: "2023-08-18T09:27:12.064Z",
-        updatedAt: "2023-08-21T06:46:26.798Z",
+        createdAt: "2023-09-18T09:27:12.064Z",
+        updatedAt: "2023-11-21T06:46:26.798Z",
         __v: 8,
         location: "Mumbai, India",
         profession: "Full-Stack Developer",
@@ -47,8 +48,8 @@ export const user = {
         friends: ["64df3c064180b81adfe41d4b"],
         views: [],
         verified: true,
-        createdAt: "2023-08-18T10:04:59.677Z",
-        updatedAt: "2023-08-18T10:09:20.006Z",
+        createdAt: "2024-01-18T10:04:59.677Z",
+        updatedAt: "2024-01-18T10:09:20.006Z",
         __v: 1,
       },
     ],
@@ -144,6 +145,8 @@ export const user = {
       ...friends[2],
     },
   ];
+
+  
   export const posts = [
     {
       _id: "64e2fe620d7868ecff1a6a86",
@@ -160,8 +163,8 @@ export const user = {
         "https://res.cloudinary.com/djs3wu5bg/image/upload/v1692597858/SOCIALMEDIA/hdahstpztt1fvobc13st.png",
       likes: ["64df3c064180b81adfe41d4b"],
       comments: [],
-      createdAt: "2023-08-21T06:04:18.297Z",
-      updatedAt: "2023-08-21T06:04:18.297Z",
+      createdAt: "2023-09-21T06:04:18.297Z",
+      updatedAt: "2023-10-21T06:04:18.297Z",
       __v: 0,
     },
     {
@@ -175,8 +178,7 @@ export const user = {
         location: "Mumbai, India",
       },
       description:
-        "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, ",
-      likes: ["64df39704180b81adfe41d0b"],
+        "This is beautiful",
       comments: [],
       createdAt: "2023-08-20T08:24:54.330Z",
       updatedAt: "2023-08-21T03:23:24.809Z",
@@ -190,11 +192,11 @@ export const user = {
         lastName: "One",
       },
       description:
-        "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, ",
+      "hey",
       likes: ["64df424b4a4c0d47b5369f65"],
       comments: ["64e2d1c977e497bd3a0bf67b"],
-      createdAt: "2023-08-18T10:10:06.969Z",
-      updatedAt: "2023-08-21T02:54:01.806Z",
+      createdAt: "2023-01-18T10:10:06.969Z",
+      updatedAt: "2023-01-21T02:54:01.806Z",
       __v: 0,
       image:
         "https://res.cloudinary.com/djs3wu5bg/image/upload/v1683874458/samples/imagecon-group.jpg",
@@ -212,8 +214,8 @@ export const user = {
         "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, ",
       likes: ["64df39704180b81adfe41d0b"],
       comments: [],
-      createdAt: "2023-08-18T10:09:53.009Z",
-      updatedAt: "2023-08-21T03:35:18.541Z",
+      createdAt: "2023-04-18T10:09:53.009Z",
+      updatedAt: "2023-04-21T03:35:18.541Z",
       __v: 0,
     },
     {
@@ -223,8 +225,7 @@ export const user = {
         firstName: "User",
         lastName: "One",
       },
-      description:
-        " What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+      description: "tg",
       likes: ["64df424b4a4c0d47b5369f65"],
       comments: [],
       createdAt: "2023-08-18T10:07:24.023Z",
